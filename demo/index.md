@@ -13,7 +13,7 @@ lang: en
 ---
 
 
-## About ME
+## About
 
 <table class="about-card">
   <tr>
@@ -42,7 +42,7 @@ lang: en
 
 <br>
 
-## Academic Career Trajectory
+## Trajectory
 
 This is a horizontal plot, scroll right to check it.
 
@@ -80,12 +80,39 @@ This is a horizontal plot, scroll right to check it.
 
 <br>
 
-## My Crappy softwares
+
+## Attempts
+
+I was trained first as an experimentalist and later moved toward becoming a theoretician. Ideally, it would be nice for me to combine both experiment and theory in the near future. Here are a few things I have done, and a few I am still doing.
+
+
+### Bayesian inference for immunology
+
+<p class="software-status">Unpublished preliminary work</p>
+
+<figure class="project-media-card project-media-card-wide bw-photo">
+<img src="demo/Bayes/fig1_a_bw.png" alt="Cropped preliminary figure showing panel a from an unpublished Bayesian framework for cytotoxic lymphocyte-target cell interaction dynamics." />
+<figcaption>Cropped panel a from an unpublished Bayesian framework for cytotoxic lymphocyte-target cell interaction dynamics. <a href="demo/Bayes/fig1_a_bw.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></figcaption>
+</figure>
+
+<details>
+<summary>brief introduction (unpublished and confidential)</summary>
+<p>This is an unpublished and still-confidential project on Bayesian inference for time-lapse imaging data in immunology, focused on cytotoxic lymphocyte-target cell interactions at the single-cell level.</p>
+
+<p>The central aim is to build a mechanistic framework that separates migration, encounter and contact formation, and post-contact killing decisions, so that heterogeneous behaviour can be interpreted in biologically meaningful terms rather than only through endpoint summaries.</p>
+<!-- 
+<p>For now I am only showing a high-level figure and a short description. The modelling details, inference pipeline, and full results remain preliminary and are not yet public.</p> -->
+</details>
+
+
+### Crappy softwares: imaging analysis and simulators
+
+<!-- Some crappy softwares I have created. -->
 
 <div class="software-list">
 <div class="software-card">
 <figure class="software-media">
-<img src="demo/animation_Tu_12.gif" alt="Animated CytotoxicVision output showing a target cell, nearby immune cells, and fluorescence traces over time." />
+<img src="demo/software/animation_Tu_12.gif" alt="Animated CytotoxicVision output showing a target cell, nearby immune cells, and fluorescence traces over time." />
 <figcaption>Single-cell dynamics from CytotoxicVision.</figcaption>
 </figure>
 <div class="software-copy">
@@ -98,7 +125,7 @@ This is a horizontal plot, scroll right to check it.
 </div>
 <div class="software-card">
 <figure class="software-media">
-<img src="demo/vis_test.gif" alt="Animated MantiShrimp simulation showing killer and target cells moving within a bounded region over time." />
+<img src="demo/software/vis_test.gif" alt="Animated MantiShrimp simulation showing killer and target cells moving within a bounded region over time." />
 <figcaption>Agent-based killer-target simulation from MantiShrimp.</figcaption>
 </figure>
 <div class="software-copy">
@@ -111,7 +138,7 @@ This is a horizontal plot, scroll right to check it.
 </div>
 <div class="software-card">
 <figure class="software-media">
-<img src="demo/lineage_1_raw_only.gif" alt="Animated zebrafish lineage view showing 3D microscopy data and tracked lineage-level structure over time." />
+<img src="demo/software/lineage_1_raw_only.gif" alt="Animated zebrafish lineage view showing 3D microscopy data and tracked lineage-level structure over time." />
 <figcaption>Lineage-level visualisation from the zebrafish analysis pipeline.</figcaption>
 </figure>
 <div class="software-copy">
@@ -123,6 +150,41 @@ This is a horizontal plot, scroll right to check it.
 </div>
 </div>
 </div>
+
+
+<br>
+
+
+### Injectable Hydrogel
+
+<div class="project-media-pair">
+<figure class="project-media-card">
+<img src="demo/hydrogel/IMG_2881_bw.gif" alt="Animated demonstration of a shape-memory hydrogel scaffold being compressed for injection and recovering its shape afterward." />
+<figcaption>Injectable shape-memory hydrogel (gelatin) during compression and recovery.</figcaption>
+</figure>
+<figure class="project-media-card">
+<img src="demo/hydrogel/IMG_3742.png" alt="Scanning electron microscopy image showing the interconnected porous microstructure of the hydrogel scaffold." />
+<figcaption>SEM view of the porous scaffold architecture.</figcaption>
+</figure>
+</div>
+
+
+<details>
+<summary>porous cryogel</summary>
+<p>This was a biomaterials project I reproduced during my undergraduate studies, based on the injectable shape-memory scaffold reported by Bencherif and colleagues. The concept was simple but elegant: to create a porous hydrogel that could be compressed, injected through a syringe, and then recover its original structure after injection.</p>
+
+<p>In their work, the porous architecture was generated through slow covalent crosslinking at low temperature. Ice crystals formed during the crosslinking process occupied space within the material and later served as pore templates.</p>
+
+<p>Later, my colleagues and I developed a related approach for producing an ionically crosslinked porous alginate hydrogel. We first froze and lyophilised the alginate precursor, then immersed it in a calcium-ion solution to induce crosslinking. This produced a highly similar porous structure, while also preserving the material’s injectable behaviour.</p>
+
+<p>Our original aim was to load NK cells into the hydrogel and use it as a delivery platform for solid tumours. Because of COVID and a few other unavoidable disruptions, I never managed to complete the bioengineering part of the project. It was a slightly frustrating ending.</p>
+
+<p><strong>Reference:</strong> Sidi A. Bencherif, R. Warren Sands, Deen Bhatta, et al. “Injectable preformed scaffolds with shape-memory properties.” <em>Proceedings of the National Academy of Sciences</em> 109(48): 19590-19595 (2012). <a href="https://doi.org/10.1073/pnas.1211516109" target="_blank" rel="noopener noreferrer">doi.org/10.1073/pnas.1211516109</a></p>
+</details>
+
+
+
+
 
 
 
