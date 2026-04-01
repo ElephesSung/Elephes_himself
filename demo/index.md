@@ -1,32 +1,219 @@
 ---
-title: The Monospace Web
-subtitle: A minimalist design exploration
-author: Oskar Wickström
-author-url: "https://wickstrom.tech"
+title: "Elephes Sung"
+subtitle: "Something of a scientist"
+author: "King of the Clingenland"
+author-url: "https://github.com/ElephesSung"
 lang: en
-toc-title: Contents
+# toc-title: "Contents"
+# description-meta: "Personal academic website of Elephes Sung / Fanxin Song at Imperial College London"
+# keywords:
+#   - bioinformatics
+#   - life sciences
+#   - Imperial College London
 ---
 
-## Introduction
 
-Monospace fonts are dear to many of us. 
-Some find them more readable, consistent, and beautiful, than their proportional alternatives.
-Maybe we're just brainwashed from spending years in terminals?
-Or are we hopelessly nostalgic?
-I'm not sure.
-But I like them, and that's why I started experimenting with all-monospace Web.
+## About ME
 
-On this page, I use a monospace grid to align text and draw diagrams.
-It's generated from a simple Markdown document (using Pandoc), and the CSS and a tiny bit of Javascript renders it on the grid.
-The page is responsive, shrinking in character-sized steps.
-Standard elements should _just work_, at least that's the goal.
-It's semantic HTML, rendered as if we were back in the 70s.
+<table class="about-card">
+  <tr>
+    <td class="width-min about-photo-cell">
+      <figure class="bw-photo about-photo">
+        <img src="demo/profile_2.JPG" alt="Elephes Sung" />
+        <figcaption>print("hello")</figcaption>
+      </figure>
+    </td>
 
-All right, but is this even a good idea?
-It's a technical and creative challenge and I like the aesthetic.
-If you'd like to use it, feel free to fork or copy the bits you need, respecting the license.
-I might update it over time with improvements and support for more standard elements.
+    <td class="width-auto about-copy">
+      <p>I am currently a PhD student in Life Sciences at Imperial College, with a research interest in <strong>mathematical biophysics and immunology</strong>.</p>
 
+      <p>Previously, I completed an MRes in Systems and Synthetic Biology, also at Imperial College. Even prior to that, I got my bachelor’s degree in Nanomaterials and Nanotechnology.</p>
+
+      <p>Approximately 84% of people mispronounce my name on first reading, while 52.1% confidently assume it is Greek. Neither observation is especially concerning: you are entirely welcome to pronounce it however you wish.</p>
+
+      <p>You can email me at <a href="mailto:eu23@ic.ac.uk?subject=Hello_from_webpage">eu23@ic.ac.uk</a></p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+---
+
+<br>
+
+## Academic Career Trajectory
+
+This is a horizontal plot, scroll right to check it.
+
+```
+/*
+            I need more quantitative                                                                                  
+            & systematic methods to                                                                                   
+            immunological mechanisms                                                                                  
+                     │                                                                                                
+  2019-2023          │       2023-2024                                                                                
+ ┌───────────────┐   │      ┌────────────────────┐                  ┌─────────────────────────────────────────┐       
+ │ B.Eng.        ┼───┴─────►│ M.Res. Systems     ┼──────┬──────────►│ PhD in Life Sciences Research           │       
+ │ Nanomaterials │          │ & Synthetic Biology│      │           │ President's Scholarship                 │       
+ └┬──┬──────────┬┘          └─────────┬──────────┘      │           └──────┬──────────────────────────────────┘       
+  │  └─────┬────┘                     │             in between:            │   Project 1. dynamics of interactions    
+  │        │~3yrs                     │             ESA Hackthon           │          between killer immune cell      
+  │        ▼                          ▼             Bayesian inference     │                     & target cells       
+  │   UG project               Master's project       for astronauts'      │                                          
+  │   Injectable Hydrogel      Agent-based modelling    health prediction  │   Project 2. dynamics of immune receptors
+  │   NK cell delivery         NK cell-tumour                              │          & cell decision-making          
+  │         cancer therapy             interactions                        │                                          
+  ▼ ~1yr                                                                   │                                          
+  lab intern                                                               small confidential project:                
+  solar chemical                                                           Google Deepmind & Imperial College         
+  battery                                                                                                             
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────┐      
+│  TIMELINE                           TIMELINE                        TIMELINE                     TIMELINE    │      
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────┘      
+ */
+```
+
+<br>
+
+---
+
+<br>
+
+## My Crappy softwares
+
+<div class="software-list">
+<div class="software-card">
+<figure class="software-media">
+<img src="demo/animation_Tu_12.gif" alt="Animated CytotoxicVision output showing a target cell, nearby immune cells, and fluorescence traces over time." />
+<figcaption>Single-cell dynamics from CytotoxicVision.</figcaption>
+</figure>
+<div class="software-copy">
+<h3>CytotoxicVision</h3>
+<p>A small but useful imaging pipeline for analysing time-lapse fluorescence microscopy data of NK-cell interactions with 721.221 target cells. Demo data from Dr Cathal Hosty (he was at Dan Davis lab by then)</p>
+<!-- <p>It stitches together segmentation, tracking, fluorescence quantification, and contact analysis into one workflow, using <strong>Cellpose</strong>, <strong>CellDetective</strong>, and <strong>btrack</strong>.</p> -->
+<p>The current version is still more of a demonstration framework than a polished package, but it already produces interpretable single-cell and population-level readouts.</p>
+<p><strong>Repository:</strong> <a href="https://github.com/ElephesSung/CytotoxicVision" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/CytotoxicVision</a></p>
+</div>
+</div>
+<div class="software-card">
+<figure class="software-media">
+<img src="demo/vis_test.gif" alt="Animated MantiShrimp simulation showing killer and target cells moving within a bounded region over time." />
+<figcaption>Agent-based killer-target simulation from MantiShrimp.</figcaption>
+</figure>
+<div class="software-copy">
+<h3>MantiShrimp</h3>
+<p>A lightweight agent-based simulator for killer-target immune-cell interactions, built to study migration, contact formation, probabilistic killing, and target death dynamics in 2D.</p>
+<!-- <p>It returns both full time-resolved trajectories and analysis-friendly tables, so the same run can be used for animation, mechanistic inspection, and downstream quantification.</p>
+<p>The project also includes visualisation tools for simulation playback and a caterpillar-style decision-map analysis for killer contact histories.</p> -->
+<p><strong>Repository:</strong> <a href="https://github.com/ElephesSung/MantiShrimp" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/MantiShrimp</a></p>
+</div>
+</div>
+<div class="software-card">
+<figure class="software-media">
+<img src="demo/lineage_1_raw_only.gif" alt="Animated zebrafish lineage view showing 3D microscopy data and tracked lineage-level structure over time." />
+<figcaption>Lineage-level visualisation from the zebrafish analysis pipeline.</figcaption>
+</figure>
+<div class="software-copy">
+<p class="software-status">Confidential software under development</p>
+<h3>zebrafish</h3>
+<p>An internal zebrafish time-lapse imaging analysis pipeline for preprocessing 4D microscopy data, generating nuclei masks, tracking cells across time, and performing lineage-level heterochromatin dot detection. Data from May Liu at PDN Cambridge. </p>
+<!-- <p>The current practical workflow is script-driven: preprocessing, Cellpose segmentation, Ultrack tracking, lineage splitting, crop normalisation, and downstream puncta or big-fish style dot detection.</p> -->
+<p><strong>Status:</strong> private repository, active development.</p>
+</div>
+</div>
+</div>
+
+
+
+<br>
+
+---
+
+<br>
+
+## Publications
+
+<p>
+  <a class="icon-button scholar-button" href="https://scholar.google.com/citations?user=HcFouHYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Open Google Scholar profile">
+    <span>Google Scholar</span>
+  </a>
+</p>
+
+
+
+<details>
+<summary> Mathematical Biophysics </summary>
+<p>coming soon...</p>
+</details>
+
+
+
+
+
+
+<details>
+
+<summary>Nanomaterials & Drug Delivery</summary>
+<p>
+<table class="pub-cards">
+  <tr>
+    <td class="width-auto">
+      <p><strong>Review</strong></p>
+      <p>Precision Medicine: The Road to In Vivo Synthetic Therapeutic Agent.</p>
+      <p>Yang‐Bao Miao, Zhao Wang, <strong>Fan-Xin Song</strong>, Renchi Gao, Zheng Deng, Guohui Zhang</p>
+      <p><em>Advanced Functional Materials</em>, Vol. 35, Issue 47, p. 2510183 (2025)</p>
+      <p><a href="https://doi.org/10.1002/adfm.202510183">Read more</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="width-auto">
+      <p><strong>Review</strong></p>
+      <p>Recent Progress in Nanomaterial-Based Biosensors and Theranostic Nanomedicine for Bladder Cancer.</p>
+      <p><strong>Fan-Xin Song</strong>, Xiaojian Xu, Hengze Ding, Le Yu, Haochen Huang, Jinting Hao, Chenghao Wu, Rui Liang, Shaohua Zhang</p>
+      <p><em>Biosensors</em>, Vol. 13, Issue 1, p. 106 (2023)</p>
+      <p><a href="https://doi.org/10.3390/bios13010106">Read more</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="width-auto">
+      <p><strong>Article</strong></p>
+      <p>Achieving Precise Non-Invasive ROS Spatiotemporal Manipulation for Colon Cancer Immunotherapy.</p>
+      <p>Yang-Bao Miao, Hong-Xia Ren, Guohui Zhang, <strong>Fan-Xin Song</strong>, Weixin Liu, Yi Shi</p>
+      <p><em>Chemical Engineering Journal</em>, Vol. 481, p. 148520 (2024)</p>
+      <p><a href="https://doi.org/10.1016/j.cej.2024.148520">Read more</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="width-auto">
+      <p><strong>Article</strong></p>
+      <p>Tailoring a Luminescent Metal–Organic Framework Precise Inclusion of Pt-Aptamer Nanoparticle for Noninvasive Monitoring Parkinson's Disease.</p>
+      <p>Yang-Bao Miao, Hong-Xia Ren, Qilong Zhong, <strong>Fan-Xin Song</strong></p>
+      <p><em>Chemical Engineering Journal</em>, Vol. 441, p. 136009 (2022)</p>
+      <p><a href="https://doi.org/10.1016/j.cej.2022.136009">Read more</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="width-auto">
+      <p><strong>Article</strong></p>
+      <p>All-in-One, Solid-State, Solar-Powered Electrochemical Cell.</p>
+      <p>Yu Zhao, Chenyang Li, <strong>Fan-Xin Song</strong>, Yi Li, Yan Liu, Yajie Zhao, Xiaohong Zhang, Yu Zhao, Zhenhui Kang</p>
+      <p><em>ACS Applied Materials & Interfaces</em>, Vol. 12, Issue 51, pp. 57182–57189 (2020)</p>
+      <p><a href="https://doi.org/10.1021/acsami.0c19167">Read more</a></p>
+    </td>
+  </tr>
+</table>
+</p>
+
+</details>
+
+
+
+
+
+
+
+<!-- 
 ## The Basics
 
 This document uses a few extra classes here and there, but mostly it's just markup.
@@ -229,4 +416,4 @@ If you like it or even decide to use it, please [let me know](https://x.com/owic
 
 The full source code is here: [github.com/owickstrom/the-monospace-web](https://github.com/owickstrom/the-monospace-web)
 
-Finally, a massive shout-out to [U.S. Graphics Company](https://x.com/usgraphics) for all the inspiration.
+Finally, a massive shout-out to [U.S. Graphics Company](https://x.com/usgraphics) for all the inspiration. -->
