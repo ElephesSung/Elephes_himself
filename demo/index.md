@@ -46,13 +46,14 @@ lang: en
 
 This is a horizontal plot, scroll right to check it.
 
-```
+<figure class="trajectory">
+<pre>
 /*
             I need more quantitative                                                                                  
             & systematic methods to                                                                                   
             immunological mechanisms                                                                                  
                      │                                                                                                
-  2019-2023          │       2023-2024                                                                                
+  2019-2023          │       2023-2024                               2024-2028                                        
  ┌───────────────┐   │      ┌────────────────────┐                  ┌─────────────────────────────────────────┐       
  │ B.Eng.        ┼───┴─────►│ M.Res. Systems     ┼──────┬──────────►│ PhD in Life Sciences Research           │       
  │ Nanomaterials │          │ & Synthetic Biology│      │           │ President's Scholarship                 │       
@@ -72,7 +73,8 @@ This is a horizontal plot, scroll right to check it.
 │  TIMELINE                           TIMELINE                        TIMELINE                     TIMELINE    │      
 └──────────────────────────────────────────────────────────────────────────────────────────────────────────────┘      
  */
-```
+</pre>
+</figure>
 
 <br>
 
@@ -89,6 +91,7 @@ I was trained first as an experimentalist and later moved toward theoretical wor
 
 ### Bayesian inference for immunology
 
+<div class="project-stack">
 <div class="project-panel">
 <p class="project-kicker">Unpublished preliminary work</p>
 
@@ -105,13 +108,26 @@ I was trained first as an experimentalist and later moved toward theoretical wor
 </details>
 </div>
 
+<article class="project-panel project-panel-split">
+<figure class="project-figure bw-photo">
+<img class="project-asset" src="demo/Bayes/redshift.png" alt="Summary slide from Redshift, a hackathon project modelling astronaut immune health with cytokine dynamics and a normalized resilience factor." />
+<figcaption>Redshift: a compact cytokine-based immune-risk model for spaceflight.</figcaption>
+</figure>
+<div class="project-copy">
+<h4>Redshift</h4>
+<p>A brief Bayesian/ABC modelling project from the first European Space Agency hackathon, building a compact cytokine-based resilience factor for astronaut immune health.</p>
+<p>Our team initially won, though the medal was later rescinded for administrative and political reasons.</p>
+</div>
+</article>
+</div>
+
 <br>
 
 ### Crappy softwares: imaging analysis and simulators
 
 <div class="project-stack">
-<article class="project-panel project-panel-split">
-<figure class="project-figure">
+<article class="project-panel">
+<figure class="project-figure bw-photo">
 <video class="project-asset" autoplay muted loop playsinline preload="metadata">
 <source src="demo/software/animation_Tu_12.mp4" type="video/mp4" />
 <img src="demo/software/animation_Tu_12.gif" alt="Animated CytotoxicVision output showing a target cell, nearby immune cells, and fluorescence traces over time." />
@@ -127,7 +143,7 @@ I was trained first as an experimentalist and later moved toward theoretical wor
 </article>
 
 <article class="project-panel project-panel-split">
-<figure class="project-figure">
+<figure class="project-figure bw-photo">
 <video class="project-asset" autoplay muted loop playsinline preload="metadata">
 <source src="demo/software/vis_test.mp4" type="video/mp4" />
 <img src="demo/software/vis_test.gif" alt="Animated MantiShrimp simulation showing killer and target cells moving within a bounded region over time." />
@@ -142,7 +158,7 @@ I was trained first as an experimentalist and later moved toward theoretical wor
 </article>
 
 <article class="project-panel project-panel-split">
-<figure class="project-figure">
+<figure class="project-figure bw-photo">
 <video class="project-asset" autoplay muted loop playsinline preload="metadata">
 <source src="demo/software/lineage_1_raw_only.mp4" type="video/mp4" />
 <img src="demo/software/lineage_1_raw_only.gif" alt="Animated zebrafish lineage view showing 3D microscopy data and tracked lineage-level structure over time." />
@@ -163,18 +179,22 @@ I was trained first as an experimentalist and later moved toward theoretical wor
 ### Injectable Hydrogel
 
 <div class="project-panel">
-<div class="project-gallery">
+<div class="hydrogel-compare">
 <figure class="project-figure bw-photo">
 <video class="project-asset" autoplay muted loop playsinline preload="metadata">
 <source src="demo/hydrogel/IMG_2881_bw.mp4" type="video/mp4" />
-<img src="demo/hydrogel/IMG_2881_bw.gif" alt="Animated demonstration of a shape-memory hydrogel scaffold being compressed for injection and recovering its shape afterward." />
+<img src="demo/hydrogel/IMG_2881_bw.gif" alt="Left: Demonstration of a shape-memory hydrogel scaffold being compressed for injection and recovering its shape afterward." />
 </video>
-<figcaption>Injectable shape-memory hydrogel (gelatin) during compression and recovery.</figcaption>
 </figure>
+<div class="hydrogel-side">
 <figure class="project-figure bw-photo">
-<img class="project-asset" src="demo/hydrogel/IMG_3742.png" alt="Scanning electron microscopy image showing the interconnected porous microstructure of the hydrogel scaffold." />
-<figcaption>SEM view of the porous scaffold architecture.</figcaption>
+<img class="project-asset" src="demo/hydrogel/IMG_3742.png" alt="Up: Scanning electron microscopy (SEM) image showing the interconnected porous microstructure of the hydrogel scaffold." />
 </figure>
+<div class="hydrogel-caption-block">
+<p>← Injectable shape-memory hydrogel (gelatin) during compression and recovery.</p>
+<p>↑ SEM view of the porous scaffold architecture.</p>
+</div>
+</div>
 </div>
 
 <details>
