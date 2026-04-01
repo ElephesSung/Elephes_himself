@@ -545,8 +545,16 @@ label input {
   margin-bottom: 0;
 }
 
+.pub-cards {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
 .pub-cards td {
   width: 50%;
+  border-style: dotted;
+  border-top-style: dotted;
 }
 
 .pub-cards p:first-child {
@@ -765,6 +773,7 @@ label input {
   .pub-cards td {
     display: block;
     width: 100%;
+    border-style: dotted
   }
 
   .project-panel-split {
