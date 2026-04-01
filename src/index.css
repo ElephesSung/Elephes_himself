@@ -2,10 +2,9 @@
  * By Oskar Wickström
  * Licensed under the MIT License (https://github.com/owickstrom/the-monospace-web/blob/main/LICENSE.md)
  **/
-@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
 
 :root {
-  --font-family: "JetBrains Mono", monospace;
+  --font-family: "JetBrains Mono", "IBM Plex Mono", "SFMono-Regular", "Menlo", "Consolas", monospace;
   --line-height: 1.20rem;
   --border-thickness: 2px;
   --text-color: #000;
@@ -86,8 +85,18 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.25rem;
+  text-transform: none;
+}
+
+h4 {
+  font-size: 1.05rem;
+  text-transform: none;
 }
 
 hr {
@@ -489,64 +498,9 @@ label input {
   display: none
 }
 
-.bw-photo img {
+.bw-photo img,
+.bw-photo video {
   filter: grayscale(100%) contrast(1.1);
-}
-
-.profile-crop {
-  width: 15ch;
-  margin: 0 auto var(--line-height);
-}
-
-.profile-crop img {
-  width: 100%;
-  height: 28ch;
-  object-fit: cover;
-  object-position: center center;
-  filter: grayscale(100%);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 22ch 1fr;
-  gap: 3ch;
-  align-items: start;
-  margin-bottom: calc(var(--line-height) * 2);
-}
-
-.about-photo {
-  width: 22ch;
-  margin: 0;
-}
-
-.about-photo img {
-  width: 100%;
-  height: 28ch;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.about-text {
-  margin: 0;
-}
-
-.about-text > *:first-child {
-  margin-top: 0;
-}
-
-.bw-photo img {
-  filter: grayscale(100%) contrast(1.1);
-}
-
-@media screen and (max-width: 700px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-photo {
-    width: 22ch;
-    margin: 0 auto;
-  }
 }
 
 .about-card {
@@ -591,56 +545,78 @@ label input {
   margin-bottom: 0;
 }
 
-.software-list {
+.project-stack {
   display: grid;
   gap: calc(var(--line-height) * 1.5);
 }
 
-.software-list > * {
+.project-stack > * {
   margin-top: 0;
 }
 
-.software-card {
-  display: grid;
-  grid-template-columns: minmax(24ch, 34ch) minmax(0, 1fr);
-  gap: 2ch;
-  align-items: start;
+.project-panel {
   border: var(--border-thickness) dashed var(--text-color);
   padding:
     calc(var(--line-height) - var(--border-thickness))
     calc(1.5ch - var(--border-thickness) / 2);
 }
 
-.software-card > * {
+.project-panel > * {
   margin-top: 0;
+}
+
+.project-panel > * + * {
+  margin-top: var(--line-height);
+}
+
+.project-panel-split {
+  display: grid;
+  grid-template-columns: minmax(24ch, 34ch) minmax(0, 1fr);
+  gap: 2ch;
+  align-items: start;
+}
+
+.project-panel-split > * {
   min-width: 0;
 }
 
-.software-media {
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2ch;
+}
+
+.project-gallery > * {
+  margin-top: 0;
+}
+
+.project-figure {
   margin: 0;
 }
 
-.software-media img {
-  width: 100%;
-  height: 28ch;
-  border: var(--border-thickness) solid var(--text-color);
-  object-fit: contain;
-  object-position: center;
-  background: var(--background-color);
-}
-
-.software-media figcaption {
+.project-figure figcaption {
   margin-top: calc(var(--line-height) / 2);
   color: var(--text-color-alt);
 }
 
-.software-copy h3 {
-  margin: 0 0 var(--line-height);
-  font-size: 1.2rem;
-  text-transform: none;
+.project-asset {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: var(--background-color-alt);
 }
 
-.software-status {
+.project-panel-split .project-asset,
+.project-gallery .project-asset {
+  height: 28ch;
+}
+
+.project-figure-wide .project-asset {
+  height: auto;
+  max-height: none;
+}
+
+.project-kicker {
   display: inline-block;
   margin: 0 0 calc(var(--line-height) / 2);
   padding:
@@ -654,58 +630,20 @@ label input {
   letter-spacing: 0.04em;
 }
 
-.software-copy p:first-child {
+.project-copy h4 {
+  margin: 0 0 var(--line-height);
+}
+
+.project-copy > *:first-child {
   margin-top: 0;
 }
 
-.software-copy p:last-child {
+.project-copy > *:last-child {
   margin-bottom: 0;
 }
 
-.project-media-pair {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2ch;
-  margin-bottom: calc(var(--line-height) * 1.5);
-}
-
-.project-media-pair > * {
-  margin-top: 0;
-}
-
-.project-media-card {
-  margin: 0;
-  border: var(--border-thickness) dashed var(--text-color);
-  padding:
-    calc(var(--line-height) - var(--border-thickness))
-    calc(1.5ch - var(--border-thickness) / 2);
-}
-
-.project-media-card img {
-  width: 100%;
-  height: 28ch;
-  border: var(--border-thickness) solid var(--text-color);
-  object-fit: contain;
-  object-position: center;
-  background: var(--background-color);
-}
-
-.project-media-card.bw-photo img {
-  filter: grayscale(100%) contrast(1.1);
-}
-
-.project-media-card figcaption {
-  margin-top: calc(var(--line-height) / 2);
-  color: var(--text-color-alt);
-}
-
-.project-media-card-wide {
-  margin-bottom: calc(var(--line-height) * 1.5);
-}
-
-.project-media-card-wide img {
-  height: auto;
-  max-height: none;
+.project-panel details {
+  margin-bottom: 0;
 }
 
 .icon-button {
@@ -767,20 +705,17 @@ label input {
     width: 100%;
   }
 
-  .software-card {
+  .project-panel-split {
     grid-template-columns: 1fr;
   }
 
-  .software-media img {
+  .project-panel-split .project-asset,
+  .project-gallery .project-asset {
     height: auto;
   }
 
-  .project-media-pair {
+  .project-gallery {
     grid-template-columns: 1fr;
-  }
-
-  .project-media-card img {
-    height: auto;
   }
 }
 

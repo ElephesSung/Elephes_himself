@@ -83,15 +83,17 @@ This is a horizontal plot, scroll right to check it.
 
 ## Attempts
 
-I was trained first as an experimentalist and later moved toward becoming a theoretician. Ideally, it would be nice for me to combine both experiment and theory in the near future. Here are a few things I have done, and a few I am still doing.
+I was trained first as an experimentalist and later moved toward theoretical work. Ideally, I hope to combine experiment and theory more closely in the near future. Here are a few things I have done, and a few I am still doing.
 
+<br>
 
 ### Bayesian inference for immunology
 
-<p class="software-status">Unpublished preliminary work</p>
+<div class="project-panel">
+<p class="project-kicker">Unpublished preliminary work</p>
 
-<figure class="project-media-card project-media-card-wide bw-photo">
-<img src="demo/Bayes/fig1_a_bw.png" alt="Cropped preliminary figure showing panel a from an unpublished Bayesian framework for cytotoxic lymphocyte-target cell interaction dynamics." />
+<figure class="project-figure project-figure-wide bw-photo">
+<img class="project-asset" src="demo/Bayes/fig1_a_bw.png" alt="Cropped preliminary figure showing panel a from an unpublished Bayesian framework for cytotoxic lymphocyte-target cell interaction dynamics." />
 <figcaption>Cropped panel a from an unpublished Bayesian framework for cytotoxic lymphocyte-target cell interaction dynamics. <a href="demo/Bayes/fig1_a_bw.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></figcaption>
 </figure>
 
@@ -100,74 +102,80 @@ I was trained first as an experimentalist and later moved toward becoming a theo
 <p>This is an unpublished and still-confidential project on Bayesian inference for time-lapse imaging data in immunology, focused on cytotoxic lymphocyte-target cell interactions at the single-cell level.</p>
 
 <p>The central aim is to build a mechanistic framework that separates migration, encounter and contact formation, and post-contact killing decisions, so that heterogeneous behaviour can be interpreted in biologically meaningful terms rather than only through endpoint summaries.</p>
-<!-- 
-<p>For now I am only showing a high-level figure and a short description. The modelling details, inference pipeline, and full results remain preliminary and are not yet public.</p> -->
 </details>
-
-
-### Crappy softwares: imaging analysis and simulators
-
-<!-- Some crappy softwares I have created. -->
-
-<div class="software-list">
-<div class="software-card">
-<figure class="software-media">
-<img src="demo/software/animation_Tu_12.gif" alt="Animated CytotoxicVision output showing a target cell, nearby immune cells, and fluorescence traces over time." />
-<figcaption>Single-cell dynamics from CytotoxicVision.</figcaption>
-</figure>
-<div class="software-copy">
-<h3>CytotoxicVision</h3>
-<p>A small but useful imaging pipeline for analysing time-lapse fluorescence microscopy data of NK-cell interactions with 721.221 target cells. Demo data from Dr Cathal Hosty (he was at Dan Davis lab by then)</p>
-<!-- <p>It stitches together segmentation, tracking, fluorescence quantification, and contact analysis into one workflow, using <strong>Cellpose</strong>, <strong>CellDetective</strong>, and <strong>btrack</strong>.</p> -->
-<p>The current version is still more of a demonstration framework than a polished package, but it already produces interpretable single-cell and population-level readouts.</p>
-<p><strong>Repository:</strong> <a href="https://github.com/ElephesSung/CytotoxicVision" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/CytotoxicVision</a></p>
 </div>
-</div>
-<div class="software-card">
-<figure class="software-media">
-<img src="demo/software/vis_test.gif" alt="Animated MantiShrimp simulation showing killer and target cells moving within a bounded region over time." />
-<figcaption>Agent-based killer-target simulation from MantiShrimp.</figcaption>
-</figure>
-<div class="software-copy">
-<h3>MantiShrimp</h3>
-<p>A lightweight agent-based simulator for killer-target immune-cell interactions, built to study migration, contact formation, probabilistic killing, and target death dynamics in 2D.</p>
-<!-- <p>It returns both full time-resolved trajectories and analysis-friendly tables, so the same run can be used for animation, mechanistic inspection, and downstream quantification.</p>
-<p>The project also includes visualisation tools for simulation playback and a caterpillar-style decision-map analysis for killer contact histories.</p> -->
-<p><strong>Repository:</strong> <a href="https://github.com/ElephesSung/MantiShrimp" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/MantiShrimp</a></p>
-</div>
-</div>
-<div class="software-card">
-<figure class="software-media">
-<img src="demo/software/lineage_1_raw_only.gif" alt="Animated zebrafish lineage view showing 3D microscopy data and tracked lineage-level structure over time." />
-<figcaption>Lineage-level visualisation from the zebrafish analysis pipeline.</figcaption>
-</figure>
-<div class="software-copy">
-<p class="software-status">Confidential software under development</p>
-<h3>zebrafish</h3>
-<p>An internal zebrafish time-lapse imaging analysis pipeline for preprocessing 4D microscopy data, generating nuclei masks, tracking cells across time, and performing lineage-level heterochromatin dot detection. Data from May Liu at PDN Cambridge. </p>
-<!-- <p>The current practical workflow is script-driven: preprocessing, Cellpose segmentation, Ultrack tracking, lineage splitting, crop normalisation, and downstream puncta or big-fish style dot detection.</p> -->
-<p><strong>Status:</strong> private repository, active development.</p>
-</div>
-</div>
-</div>
-
 
 <br>
 
+### Crappy softwares: imaging analysis and simulators
+
+<div class="project-stack">
+<article class="project-panel project-panel-split">
+<figure class="project-figure">
+<video class="project-asset" autoplay muted loop playsinline preload="metadata">
+<source src="demo/software/animation_Tu_12.mp4" type="video/mp4" />
+<img src="demo/software/animation_Tu_12.gif" alt="Animated CytotoxicVision output showing a target cell, nearby immune cells, and fluorescence traces over time." />
+</video>
+<figcaption>Single-cell dynamics from CytotoxicVision.</figcaption>
+</figure>
+<div class="project-copy">
+<h4>CytotoxicVision</h4>
+<p>A small but useful imaging pipeline for analysing time-lapse fluorescence microscopy data of NK-cell interactions with 721.221 target cells. Demo data from Dr Cathal Hosty from the Dan Davis lab.</p>
+<p>The current version is still more of a demonstration framework than a polished package, but it already produces interpretable single-cell and population-level readouts.</p>
+<p><strong>Repository:</strong> <a href="https://github.com/ElephesSung/CytotoxicVision" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/CytotoxicVision</a></p>
+</div>
+</article>
+
+<article class="project-panel project-panel-split">
+<figure class="project-figure">
+<video class="project-asset" autoplay muted loop playsinline preload="metadata">
+<source src="demo/software/vis_test.mp4" type="video/mp4" />
+<img src="demo/software/vis_test.gif" alt="Animated MantiShrimp simulation showing killer and target cells moving within a bounded region over time." />
+</video>
+<figcaption>Agent-based killer-target simulation from MantiShrimp.</figcaption>
+</figure>
+<div class="project-copy">
+<h4>MantiShrimp</h4>
+<p>A lightweight agent-based simulator for killer-target immune-cell interactions, built to study migration, contact formation, probabilistic killing, and target death dynamics in 2D.</p>
+<p><strong>Repository:</strong> <a href="https://github.com/ElephesSung/MantiShrimp" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/MantiShrimp</a></p>
+</div>
+</article>
+
+<article class="project-panel project-panel-split">
+<figure class="project-figure">
+<video class="project-asset" autoplay muted loop playsinline preload="metadata">
+<source src="demo/software/lineage_1_raw_only.mp4" type="video/mp4" />
+<img src="demo/software/lineage_1_raw_only.gif" alt="Animated zebrafish lineage view showing 3D microscopy data and tracked lineage-level structure over time." />
+</video>
+<figcaption>Lineage-level visualisation from the zebrafish analysis pipeline.</figcaption>
+</figure>
+<div class="project-copy">
+<p class="project-kicker">Confidential software under development</p>
+<h4>zebrafish</h4>
+<p>An internal zebrafish time-lapse imaging analysis pipeline for preprocessing 4D microscopy data, generating nuclei masks, tracking cells across time, and performing lineage-level heterochromatin dot detection. Data from May Liu at PDN Cambridge.</p>
+<p><strong>Status:</strong> private repository, active development.</p>
+</div>
+</article>
+</div>
+
+<br>
 
 ### Injectable Hydrogel
 
-<div class="project-media-pair">
-<figure class="project-media-card">
+<div class="project-panel">
+<div class="project-gallery">
+<figure class="project-figure bw-photo">
+<video class="project-asset" autoplay muted loop playsinline preload="metadata">
+<source src="demo/hydrogel/IMG_2881_bw.mp4" type="video/mp4" />
 <img src="demo/hydrogel/IMG_2881_bw.gif" alt="Animated demonstration of a shape-memory hydrogel scaffold being compressed for injection and recovering its shape afterward." />
+</video>
 <figcaption>Injectable shape-memory hydrogel (gelatin) during compression and recovery.</figcaption>
 </figure>
-<figure class="project-media-card">
-<img src="demo/hydrogel/IMG_3742.png" alt="Scanning electron microscopy image showing the interconnected porous microstructure of the hydrogel scaffold." />
+<figure class="project-figure bw-photo">
+<img class="project-asset" src="demo/hydrogel/IMG_3742.png" alt="Scanning electron microscopy image showing the interconnected porous microstructure of the hydrogel scaffold." />
 <figcaption>SEM view of the porous scaffold architecture.</figcaption>
 </figure>
 </div>
-
 
 <details>
 <summary>porous cryogel</summary>
@@ -181,12 +189,7 @@ I was trained first as an experimentalist and later moved toward becoming a theo
 
 <p><strong>Reference:</strong> Sidi A. Bencherif, R. Warren Sands, Deen Bhatta, et al. “Injectable preformed scaffolds with shape-memory properties.” <em>Proceedings of the National Academy of Sciences</em> 109(48): 19590-19595 (2012). <a href="https://doi.org/10.1073/pnas.1211516109" target="_blank" rel="noopener noreferrer">doi.org/10.1073/pnas.1211516109</a></p>
 </details>
-
-
-
-
-
-
+</div>
 
 <br>
 

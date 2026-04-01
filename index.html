@@ -119,16 +119,18 @@ You can email me at
 <p><br></p>
 <h2 id="attempts">Attempts</h2>
 <p>I was trained first as an experimentalist and later moved toward
-becoming a theoretician. Ideally, it would be nice for me to combine
-both experiment and theory in the near future. Here are a few things I
-have done, and a few I am still doing.</p>
+theoretical work. Ideally, I hope to combine experiment and theory more
+closely in the near future. Here are a few things I have done, and a few
+I am still doing.</p>
+<p><br></p>
 <h3 id="bayesian-inference-for-immunology">Bayesian inference for
 immunology</h3>
-<p class="software-status">
+<div class="project-panel">
+<p class="project-kicker">
 Unpublished preliminary work
 </p>
-<figure class="project-media-card project-media-card-wide bw-photo">
-<img src="demo/Bayes/fig1_a_bw.png" alt="Cropped preliminary figure showing panel a from an unpublished Bayesian framework for cytotoxic lymphocyte-target cell interaction dynamics." />
+<figure class="project-figure project-figure-wide bw-photo">
+<img class="project-asset" src="demo/Bayes/fig1_a_bw.png" alt="Cropped preliminary figure showing panel a from an unpublished Bayesian framework for cytotoxic lymphocyte-target cell interaction dynamics." />
 <figcaption>
 Cropped panel a from an unpublished Bayesian framework for cytotoxic
 lymphocyte-target cell interaction dynamics.
@@ -152,30 +154,31 @@ decisions, so that heterogeneous behaviour can be interpreted in
 biologically meaningful terms rather than only through endpoint
 summaries.
 </p>
-<!-- 
-<p>For now I am only showing a high-level figure and a short description. The modelling details, inference pipeline, and full results remain preliminary and are not yet public.</p> -->
 </details>
+</div>
+<p><br></p>
 <h3 id="crappy-softwares-imaging-analysis-and-simulators">Crappy
 softwares: imaging analysis and simulators</h3>
-<!-- Some crappy softwares I have created. -->
-<div class="software-list">
-<div class="software-card">
-<figure class="software-media">
+<div class="project-stack">
+<article class="project-panel project-panel-split">
+<figure class="project-figure">
+<video class="project-asset" autoplay muted loop playsinline preload="metadata">
+<source src="demo/software/animation_Tu_12.mp4" type="video/mp4" />
 <img src="demo/software/animation_Tu_12.gif" alt="Animated CytotoxicVision output showing a target cell, nearby immune cells, and fluorescence traces over time." />
+</video>
 <figcaption>
 Single-cell dynamics from CytotoxicVision.
 </figcaption>
 </figure>
-<div class="software-copy">
-<h3>
+<div class="project-copy">
+<h4>
 CytotoxicVision
-</h3>
+</h4>
 <p>
 A small but useful imaging pipeline for analysing time-lapse
 fluorescence microscopy data of NK-cell interactions with 721.221 target
-cells. Demo data from Dr Cathal Hosty (he was at Dan Davis lab by then)
+cells. Demo data from Dr Cathal Hosty from the Dan Davis lab.
 </p>
-<!-- <p>It stitches together segmentation, tracking, fluorescence quantification, and contact analysis into one workflow, using <strong>Cellpose</strong>, <strong>CellDetective</strong>, and <strong>btrack</strong>.</p> -->
 <p>
 The current version is still more of a demonstration framework than a
 polished package, but it already produces interpretable single-cell and
@@ -186,70 +189,77 @@ population-level readouts.
 <a href="https://github.com/ElephesSung/CytotoxicVision" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/CytotoxicVision</a>
 </p>
 </div>
-</div>
-<div class="software-card">
-<figure class="software-media">
+</article>
+<article class="project-panel project-panel-split">
+<figure class="project-figure">
+<video class="project-asset" autoplay muted loop playsinline preload="metadata">
+<source src="demo/software/vis_test.mp4" type="video/mp4" />
 <img src="demo/software/vis_test.gif" alt="Animated MantiShrimp simulation showing killer and target cells moving within a bounded region over time." />
+</video>
 <figcaption>
 Agent-based killer-target simulation from MantiShrimp.
 </figcaption>
 </figure>
-<div class="software-copy">
-<h3>
+<div class="project-copy">
+<h4>
 MantiShrimp
-</h3>
+</h4>
 <p>
 A lightweight agent-based simulator for killer-target immune-cell
 interactions, built to study migration, contact formation, probabilistic
 killing, and target death dynamics in 2D.
 </p>
-<!-- <p>It returns both full time-resolved trajectories and analysis-friendly tables, so the same run can be used for animation, mechanistic inspection, and downstream quantification.</p>
-<p>The project also includes visualisation tools for simulation playback and a caterpillar-style decision-map analysis for killer contact histories.</p> -->
 <p>
 <strong>Repository:</strong>
 <a href="https://github.com/ElephesSung/MantiShrimp" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/MantiShrimp</a>
 </p>
 </div>
-</div>
-<div class="software-card">
-<figure class="software-media">
+</article>
+<article class="project-panel project-panel-split">
+<figure class="project-figure">
+<video class="project-asset" autoplay muted loop playsinline preload="metadata">
+<source src="demo/software/lineage_1_raw_only.mp4" type="video/mp4" />
 <img src="demo/software/lineage_1_raw_only.gif" alt="Animated zebrafish lineage view showing 3D microscopy data and tracked lineage-level structure over time." />
+</video>
 <figcaption>
 Lineage-level visualisation from the zebrafish analysis pipeline.
 </figcaption>
 </figure>
-<div class="software-copy">
-<p class="software-status">
+<div class="project-copy">
+<p class="project-kicker">
 Confidential software under development
 </p>
-<h3>
+<h4>
 zebrafish
-</h3>
+</h4>
 <p>
 An internal zebrafish time-lapse imaging analysis pipeline for
 preprocessing 4D microscopy data, generating nuclei masks, tracking
 cells across time, and performing lineage-level heterochromatin dot
 detection. Data from May Liu at PDN Cambridge.
 </p>
-<!-- <p>The current practical workflow is script-driven: preprocessing, Cellpose segmentation, Ultrack tracking, lineage splitting, crop normalisation, and downstream puncta or big-fish style dot detection.</p> -->
 <p>
 <strong>Status:</strong> private repository, active development.
 </p>
 </div>
-</div>
+</article>
 </div>
 <p><br></p>
 <h3 id="injectable-hydrogel">Injectable Hydrogel</h3>
-<div class="project-media-pair">
-<figure class="project-media-card">
+<div class="project-panel">
+<div class="project-gallery">
+<figure class="project-figure bw-photo">
+<video class="project-asset" autoplay muted loop playsinline preload="metadata">
+<source src="demo/hydrogel/IMG_2881_bw.mp4" type="video/mp4" />
 <img src="demo/hydrogel/IMG_2881_bw.gif" alt="Animated demonstration of a shape-memory hydrogel scaffold being compressed for injection and recovering its shape afterward." />
+</video>
 <figcaption>
 Injectable shape-memory hydrogel (gelatin) during compression and
 recovery.
 </figcaption>
 </figure>
-<figure class="project-media-card">
-<img src="demo/hydrogel/IMG_3742.png" alt="Scanning electron microscopy image showing the interconnected porous microstructure of the hydrogel scaffold." />
+<figure class="project-figure bw-photo">
+<img class="project-asset" src="demo/hydrogel/IMG_3742.png" alt="Scanning electron microscopy image showing the interconnected porous microstructure of the hydrogel scaffold." />
 <figcaption>
 SEM view of the porous scaffold architecture.
 </figcaption>
@@ -293,6 +303,7 @@ properties.” <em>Proceedings of the National Academy of Sciences</em>
 <a href="https://doi.org/10.1073/pnas.1211516109" target="_blank" rel="noopener noreferrer">doi.org/10.1073/pnas.1211516109</a>
 </p>
 </details>
+</div>
 <p><br></p>
 <hr />
 <p><br></p>
